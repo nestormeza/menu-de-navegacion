@@ -1,0 +1,63 @@
+body{
+    margin: 0px;
+}
+/* barra lateral del menu*/
+.navbar-sidaber{
+    background-color: tomato;
+    width: 350px;
+    height: 100%;
+    max-height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+/* img de logo de empresa */
+.logo{
+    width: 40%;
+}
+.navbar-brand{
+    width: 350px;
+}
+/* informacion de ususario */
+.linea-a{
+    margin-top: -3px;
+    margin: 0px;
+    background-color: gray;
+}
+.user-photo-information{
+    padding:25px;
+    margin-top: -10px;
+    width: 350px;  
+    height: 110px;  
+}
+.user-information{
+    float: left;
+    margin-left: 20px;
+}
+.user-information > span{
+    display: block;
+}
+.name-user{
+    font-weight: bold;
+    font-size: 19px;
+    color: white;
+}
+.account-type{
+    color: gray;
+}
+.user-photo{
+    float: left;
+    width: 90px;
+    height: 90px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.linea{
+    background-color: gray;
+    margin-top: 25px;
+}
+.tittle{
+    color: gray;
+    font-weight: bold;
+    margin-left: 10px;
+}
