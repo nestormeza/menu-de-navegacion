@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="../menu/static/css/index.css" type="text/css">
+    <link rel="stylesheet" href="static/css/index.css" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <title>Document</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+  <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <title>Sistema de ubicaciones| Area de Camara</title>
 </head>
 <body>
     <!-- inicio de la navbar -->
@@ -16,7 +19,7 @@
         <!-- logo de la empresa -->
         <div class="navbar-brand  text-center">
             <a href="">
-                <img class ="logo"src="../menu/static/images/logo_login.png">
+                <img class ="logo"src="static/images/logo_login.png">
             </a>
             <hr class="linea-a">
         </div>
@@ -28,18 +31,69 @@
             <div class="user-information" >
                 <span class="name-user">Nestor Rosas</span>
                 <span class="account-type">Administrador</span>
-                <span class="circle"><i  class="fa fa-circle"></i></span>
-                <span class="account-type">En linea</span>
+                <span class="account-type"> <i class="icon-circle fa fa-circle" > </i>  En linea</span>
             </div>
         </div>
         <hr class="linea">
-        <span class="tittle">Menu</span>
-        <nav class="navbar">
-            <ul>
-    
-            </ul>
-        </nav>
-
+        <div class="nav-side-menu">
+            <span class="tittle">Menu</span>
+            <div class="menu-list">
+                <ul class="">
+                    <li>
+                        <a href="#">
+                        <i class="fas fa-home"></i>
+                        <span class="label">Inicio</span> 
+                        </a>
+                    </li>
+                    <li  data-toggle="collapse" data-target="#camaras" class="collapsed">
+                        <a href="#">
+                            <i class="fas fa-th"></i>
+                            <span class="label">Almacenes de Congelado</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                    </li>
+                        <ul class="sub-menu collapse" id="camaras">
+                            <li><a href="#">Camara N°01</a></li>
+                            <li><a href="#">Camara N°06</a></li>
+                            <li><a href="#">Camara N°07</a></li>
+                            <li><a href="#">Camara N°08</a></li>
+                        </ul>
+                    <li  data-toggle="collapse" data-target="#reportessaldos" class="collapsed">
+                        <a href="#">
+                            <i class="fas fa-boxes"></i>
+                            <span class="label">Reportes de Saldos </span>
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                    </li>
+                        <ul class="sub-menu collapse" id="reportessaldos">
+                            <li><a href="#">Sala N°01</a></li>
+                            <li><a href="#">Sala N°02</a></li>
+                        </ul> 
+                    <li  data-toggle="collapse" data-target="#reportepallet" class="collapsed">
+                        <a href="#">
+                            <i class="fas fa-pallet"></i>
+                            <span class="label">Reportes de Pallets</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                    </li>
+                        <ul class="sub-menu collapse" id="reportepallet">
+                            <li><a href="#">Camara N°07</a></li>
+                            <li><a href="#">Camara N°08</a></li>
+                        </ul>                 
+                </ul>
+            </div>
+            <span class="tittle">Administrador</span>
+            <div class="menu-list">
+                <ul class="">
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-users"></i>
+                            <span class="label">Usuario</span> 
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 </body>
 </html>
