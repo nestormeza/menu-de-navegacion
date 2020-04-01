@@ -26,8 +26,8 @@ body{
 .user-photo-information{
     padding:25px;
     margin-top: -10px;
-    width: 350px;  
-    height: 110px;  
+    width: 350px;
+    height: 110px;
 }
 .user-information{
     float: left;
@@ -134,7 +134,7 @@ body{
 /* barra superior */
 .content{
     height: 100%;
-    margin-left: 350px;
+    width: 100%;
     max-height: 100%;
     background-color: rgb(219, 218, 218);
     position: fixed;
@@ -145,10 +145,38 @@ body{
     height: 67px;
     border-color: gray;
 }
+.button{
+  margin-left: 340px
+}
 .navbar ul li{
     list-style: none;
 }
 .navbar ul li a{
     text-decoration: none;
     color:black;
+}
+.navbar .menu-perfil{
+  margin-top: 14px;
+}
+.container-data{
+  margin-top: 20px;
+  margin-left: 380px;
+}
+.last-update{
+  background-color:#ffff;
+  width: 275px;
+  border-radius: 5px;
+  padding:5px;
+  float: left;
+
+}
+.last{
+  float: left;
+  margin-top: 6px;
+  margin-left: 6px;
+  font-weight: bold;
+}
+.date{
+ margin-top: 6px;
+ margin-left: 13px;
 }
